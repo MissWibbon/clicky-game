@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import NavTabs from "./components/NavTabs";
 import Header from "./components/Header";
-import Card from "./Card";
+import ImageCard from "../src/components/ImageCard";
 import Row from "./Row";
-import Col from "./Col";
+import Game from "./components/Game";
 import "./styles/styles.css"
 
 
@@ -15,8 +15,7 @@ function App() {
         <NavTabs />
         <Header />
         <Row />
-        <Col />
-        <Card />
+        <Game />
       </div>
     </Router>
   );

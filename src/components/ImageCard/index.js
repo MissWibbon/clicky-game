@@ -1,15 +1,14 @@
 import React from "react";
 import "./style.css";
 
-function FriendCard(props) {
+function ImageCard(props) {
   return (
     <div className="card">
-      <div className="img-container">
+      <div className="img-container" onClick = {() => props.trail(props.value)} className='cardCont'>
         <img alt={props.name} src={props.image} />
       </div>
-      <span className="remove">𝘅</span>
     </div>
   );
 }
 
-export default FriendCard;
+export default ImageCard;
