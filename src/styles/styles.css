@@ -160,4 +160,8 @@ header h2 {
         margin-left: -40px;
         margin-top: -160px;
     }
+    .navbarCont ul {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
