@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
+
 function NavTabs() {
 return (
 <nav class="navbar">
     <ul>
         <li>
             <Link class="brand">
-                <a href="/">Clicky Game</a>
+                <a href="/"><div class="glogo">GLOW</div> Clicky Game</a>
             </Link>
         </li>
         <li>

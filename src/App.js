@@ -11,7 +11,7 @@ import "./styles/styles.css"
 function App() {
   return (
     <Router>
-      <div>
+      <div className="glow">
         <NavTabs />
         <Header />
         <Row />

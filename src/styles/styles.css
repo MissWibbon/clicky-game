@@ -1,19 +1,35 @@
+.glow {
+    background-image: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/concrete-grey-grunge-textures-4-780x520.jpg');
+    background-size: cover;
+    background-color: #1a1110;
+    background-blend-mode: soft-light;
+    padding: 20px;
+    padding-top: 90px;;
+   }
+
+
+
 .navbar {
-    background: #5133a4;
     min-height: 70px;
-    position: fixed;
     width: 100%;
-    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
-    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
-    color: #fff;
+    color: purple;
+    background: transparent;
     font-size: calc(10px + 14 * (100vw - 320px)/ 800);
     z-index: 99;
     white-space: nowrap;
+    position: fixed;
+    margin-top: -100px;
+    transition: background-color 200ms linear;
+    margin-left: -20px;
+
+}
+.navbar.scrolled {
+    background-color: purple;
 }
 
 .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: purple;
     font-weight: 900;
 }
 .navbar li {
@@ -29,16 +45,54 @@
     width: 100%;
 }
 header {
-    padding-top: 120px;
+    padding-top: 40px;
     text-align: center;
-    color: white;
-    background-color: #1a1110;
+    color: purple;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: flicker 1.5s infinite alternate; 
+}
+header h1 {
+    font-family: 'Monoton', cursive;
+}
+.glogo {
+    display: inline;
+    font-family: 'Monoton', cursive;
+    font-weight: 100;
+    color: pink;
 }
 header h2 {
     font-size: 16px;
+}
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        color: pink;
+        text-shadow:
+            -0.2rem -0.2rem .2rem #2f0d40,
+            0.2rem 0.2rem .2rem #2f0d40,
+            0 0 2rem purple,
+            0 0 4rem purple,
+            0 0 6rem purple,
+            0 0 8rem purple,
+            0 0 10rem purple;
+        
+        box-shadow:
+            0 0 .5rem pink,
+            inset 0 0 .5rem pink,
+            0 0 2rem purple,
+            inset 0 0 2rem purple,
+            0 0 4rem purple,
+            inset 0 0 4rem purple;        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
 }
 .click-item {
     background-size: cover;
