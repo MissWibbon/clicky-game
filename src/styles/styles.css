@@ -3,13 +3,13 @@
     background-size: cover;
     background-color: #1a1110;
     background-blend-mode: soft-light;
-    padding: 20px;
+    padding: 60px;
     padding-top: 90px;;
    }
 
 
 
-.navbar {
+.navbarCont {
     min-height: 70px;
     width: 100%;
     color: purple;
@@ -18,28 +18,35 @@
     z-index: 99;
     white-space: nowrap;
     position: fixed;
-    margin-top: -100px;
+    margin-top: -250px;
     transition: background-color 200ms linear;
-    margin-left: -20px;
+    margin-left: -90px;
+    width: 105%
 
 }
-.navbar.scrolled {
+.navbarCont.scrolled {
     background-color: purple;
 }
 
-.navbar a {
+.navbarCont a {
     text-decoration: none;
     color: purple;
     font-weight: 900;
 }
-.navbar li {
+.navbarCont li {
     display: inline-block;
     padding: 26px 0;
     width: 33.3%;
     text-align: center;
 }
-
-.navbar ul {
+.wins, .losses {
+    display: inline;
+    font-weight: 900;
+}
+.guess-msg {
+    display: inline;
+}
+.navbarCont ul {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -115,4 +122,42 @@ header h2 {
     -webkit-transition: .1s;
     -o-transition: .1s;
     transition: .1s;
+}
+.cont {
+    margin-left: -30px;
+}
+
+@media only screen and (max-width: 678px){
+    h1 {
+        font-size: 1.5rem;
+    }
+    .card {
+        width: 46%;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    .glow {
+        padding: 40px;
+    }
+    .navbarCont {
+        margin-left: -60px;
+        margin-top: -200px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    h1 {
+        font-size: 1rem !important;
+    }
+    h2 {
+        font-size: 12px !important;
+    }
+    .glow {
+        padding: 20px;
+    }
+    .navbarCont {
+        margin-left: -40px;
+        margin-top: -160px;
+    }
 }

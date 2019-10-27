@@ -17,7 +17,7 @@ export const Data = [
     {
         "id" : 4,
         "name" : "Ruth",
-        "image" : "https://media.giphy.com/media/ZO8xEKEiAQx1Rh9GNt/giphy.gif"
+        "image" : "https://media.giphy.com/media/3OpMXHVoYQngwFLkYz/giphy.gif"
     },
     {
         "id" : 5,
@@ -52,7 +52,7 @@ export const Data = [
     {
         "id" : 11,
         "name" : "Yolanda",
-        "image" : "https://media.giphy.com/media/244Ni3ej8TffXBxB6s/giphy.gif"
+        "image" : "https://66.media.tumblr.com/fbee512198fff7d923ac1435f66176a8/tumblr_pmz53kMkao1vmre6to1_400.gif"
     },
     {
         "id" : 12,
