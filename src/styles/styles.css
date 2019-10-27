@@ -58,6 +58,7 @@ header {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+    border-radius: 5px;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: flicker 1.5s infinite alternate; 
